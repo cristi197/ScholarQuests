@@ -5,8 +5,8 @@ public class HomeworkProblem
     public int Id { get; set; }
 
     public int HomeworkId { get; set; }
-    public Homework Homework { get; set; } = null!;
+    public Homework Homework { get; set; } = default!;
 
     public int ProblemId { get; set; }
-    public Problem Problem { get; set; } = null!;
+    public Problem Problem { get; set; } = default!;
 }

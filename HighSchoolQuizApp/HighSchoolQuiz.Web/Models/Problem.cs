@@ -10,7 +10,7 @@ public class Problem
     public int GradeLevel { get; set; } // 9, 10, 11 etc
     public DifficultyLevel Difficulty { get; set; } = DifficultyLevel.Easy;
     public string Category { get; set; } = default!;
-    public string Status { get; set; } = "Pending"; // Pending, Approved, Rejected
+    public StatusType Status { get; set; } = StatusType.Pending;
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
 
     public int CreatedById { get; set; }
